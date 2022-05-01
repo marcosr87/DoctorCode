@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ffffff;
+}
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+}
+
+.text-nav{
+  letter-spacing: 1px;
+  color: rgb(133, 133, 133) !important;
+  font-size: 15px;
+  font-family: 'Lato';
+}
+
+.img-telmed{
+  padding: 10px;
+}
+
+.telemedicina{
+  padding: 10px;
+  margin: 5px;
+  background-color: #e9efc09a;
+}
+
+.texto-telmed{
+  width: 500px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.text-med{
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.column-content{
+  position: relative;
+  padding: 60px 40px;
+  z-index: 4;
+}
+
+.column-icon{
+  position: relative;
+  text-align: center;
+  background: #f6f8fb;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ESTILOS FOOTER */
+
+.footer-top {
+  background-color: #202020;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: 'Lato' ,sans-serif;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.footer-bottom {
+  background-color: #202020;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-links a,
+footer .social-icons a {
+  color: #898fa1;
+}
+
+footer .social-icons a {
+  font-size: 24px;
+}
+
+footer .footer-links a {
+  display: block;
+  font-weight: 400;
+}
+
+footer .social-icons a:hover,
+footer .footer-links a:hover {
+  color: rgb(84, 186, 185);
+}
+
+.team-member .team-member-img img,
+.team-member .team-member-img .social-icons {
+   transition: all 0.4s ease;
+}
+
+.team-member .team-member-img {
+   position: relative;
+   overflow: hidden;
+}
+
+.team-member .team-member-img .social-icons {
+   width: 100%;
+   height: 60px;
+   background-color: rgb(84, 186, 185);
+}
+
+.team-member .team-member-img .social-icons a {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   border-radius: 100px;
+   margin-left: 4px;
+   margin-right: 4px;
+}
+
+.team-member .team-member-img .social-icons a:hover {
+   
+   color: rgb(233, 218, 193);
+}
+
+.team-member:hover .team-member-img .social-icons {
+   bottom: 0;
+}
+
+.team-member:hover img {
+   transform: translateY(-60px);
+}
+
+.title-sm {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: rgb(84, 186, 185)
+}
+
+.logo-text {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: rgb(84, 186, 185);
+}
+
+@media (min-width: 320px){
+  .portada-h{
+      height: 250px;
+      position: relative;
+      opacity: 0.85;
+  }
+}
+
+@media (min-width: 480px){
+  .portada-h{
+      height: 250px;
+      position: relative;
+      opacity: 0.85;
+  }
+}
+
+@media (min-width: 760px){
+  .portada-h{
+      height: 500px;
+      position: relative;
+      opacity: 0.85;
+  }
+}
+
