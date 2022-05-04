@@ -58,6 +58,29 @@ body{
   overflow: hidden;
 }
 
+/*ESTILOS BUTTON*/
+.section-button{
+  background-color: #e9efc09a;
+  
+}
+.button-form{
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 35%;
+  margin-left: 35%;
+  background-color:white;
+  color: #202020;
+  border-radius: 25px;
+  border-color: #e9efc09a;
+  
+}
+
+.section-button a :hover{
+  background:white;
+  color: #a6ab889a;
+  border: white;
+}
 /* ESTILOS FOOTER */
 
 .footer-top {
