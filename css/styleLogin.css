@@ -10,7 +10,7 @@
 /* ESTILO LOGIN */
 
 .FormLogin{
-  height: 90vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 .FormLoginDoc{
-  height: 90vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,6 +70,35 @@
 .containerlogin.active .forms{
   height: auto;
 }
+
+@media (min-width: 320px){
+  .FormLoginDoc{
+    padding: 15px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(162, 213, 171);
+  }
+}
+
+
+
+
+@media (min-width: 320px){
+.FormLogin{
+  padding: 15px;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(229, 239, 193);
+}
+
+
+
+}
+
 .containerlogin .form .title{
   position: relative;
   font-size: 27px;
@@ -198,8 +227,11 @@
   padding-bottom: 20px;
   font-family: 'Lato' ,sans-serif;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: auto;
 
 }
+
+
 
 .footer-bottom {
   background-color: #202020;
