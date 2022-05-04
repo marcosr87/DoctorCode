@@ -17,6 +17,14 @@
   background-color: rgb(229, 239, 193);
 }
 
+.FormLoginDoc{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(162, 213, 171);
+}
+
 .containerlogin{
   position: relative;
   max-width: 430px;
@@ -60,7 +68,7 @@
 }
 
 .containerlogin.active .forms{
-  height: 700px;
+  height: auto;
 }
 .containerlogin .form .title{
   position: relative;
