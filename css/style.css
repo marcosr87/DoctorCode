@@ -20,14 +20,25 @@ body{
   font-family: 'Lato';
 }
 
+/*Seccion telmed*/
+
 .img-telmed{
   padding: 10px;
+  opacity: 0.90;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .telemedicina{
-  padding: 10px;
+  padding: 5px;
   margin: 5px;
   background-color: #e9efc09a;
+  display: flex;
+  align-items: center;
+}
+
+.telemedicina:hover{
+  box-shadow: 7px 13px 39px -15px rgba(88,92,91,0.75);
 }
 
 .texto-telmed{
@@ -39,8 +50,6 @@ body{
 
 .text-med{
   background-color: white;
-  padding: 10px;
-  margin: 10px;
   border-radius: 10px;
 }
 
