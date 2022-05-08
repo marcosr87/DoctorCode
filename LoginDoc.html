@@ -159,16 +159,17 @@
         <input type="number" placeholder="Introduzca su matricula" required />
         <i class="uil-university"></i>
       </div>
-      <div class="input-field">
-      <input placeholder="Introduzca su especialidad" list="specialitys" name="idioma" id="idioma" />
-            <datalist id="specialitys">
-              <option value="Español">Español</option>
-              <option value="Ingles">Ingles</option>
-              <option value="Portugues">Portugues</option>
-            </datalist>
-            <i class="uil-bag-alt"></i>
-          </div>
-
+      <div class="field my-3 pt-0 " id ="ComboSpecialtys" >
+        <i class="uil-bag"></i>
+        <label class="fieldLabel"  for="floatingSelect">Especialidad</label>
+        <select class="form-select" id="floatingSelect" aria-label="Floating label">
+          <option selected>-selecciona-</option>
+          <option value="1">Cardiologia</option>
+          <option value="2">Neurologia</option>
+          <option value="3">Traumatologia</option>
+          <option value="4">kinesiologia</option>
+        </select>
+      </div>
       <div class="input-field">
         <input
           type="password"
