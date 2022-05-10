@@ -125,7 +125,7 @@
             </div>
 
             <div class="input-field button">
-              <input type="submit" value="Iniciar Sesión" />
+              <input onclick="" type="submit" value="Registrarse" />
             </div>
           </form>
 
@@ -144,25 +144,25 @@
 
     <form action="#">
       <div class="input-field">
-        <input type="text" placeholder="Introduzca su nombre" required />
+        <input id="name" type="text" placeholder="Introduzca su nombre" maxlength="18" required />
         <i class="uil uil-user"></i>
       </div>
       <div class="input-field">
-        <input type="text" placeholder="Introduzca su apellido" required />
+        <input id="surname" type="text" placeholder="Introduzca su apellido" required />
         <i class="uil uil-user"></i>
       </div>
       <div class="input-field">
-        <input type="email" placeholder="Introduce tu correo electrónico" required />
+        <input id="email" type="email" placeholder="Introduce tu correo electrónico" required />
         <i class="uil uil-envelope icon"></i>
       </div>
       <div class="input-field">
-        <input type="number" placeholder="Introduzca su matricula" required />
+        <input id="license" type="number" placeholder="Introduzca su matricula" required />
         <i class="uil-university"></i>
       </div>
       <div class="field my-3 pt-0 " id ="ComboSpecialtys" >
         <i class="uil-bag"></i>
         <label class="fieldLabel"  for="floatingSelect">Especialidad</label>
-        <select class="form-select" id="floatingSelect" aria-label="Floating label">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label" required>
           <option selected>-selecciona-</option>
           <option value="1">Cardiologia</option>
           <option value="2">Neurologia</option>
@@ -172,6 +172,7 @@
       </div>
       <div class="input-field">
         <input
+          id="password"
           type="password"
           class="password"
           placeholder="Crea una contraseña"
@@ -186,7 +187,7 @@
       </div>
 
       <div class="input-field button">
-        <input type="submit" value="Registrarse" />
+        <input onclick="postear()" type="submit" value="Registrarse" />
       </div>
     </form>
 
@@ -260,6 +261,8 @@
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
   crossorigin="anonymous"
 ></script>
+
+<script src="./js/RegisterDoctor.js"></script>
 <script src="./js/scriptlogin.js"></script>
   
 </body>
