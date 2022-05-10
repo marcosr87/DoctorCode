@@ -1,5 +1,15 @@
 {
-  "doctors": [],
+  "doctors": [
+    {
+      "name": "Marcos",
+      "surname": "Ezequiel Ramos",
+      "email": "marcosr_87@hotmail.com",
+      "license": "",
+      "speciality": "-selecciona-",
+      "password": "",
+      "id": 1
+    }
+  ],
   "comments": [
     {
       "id": 1,

@@ -28,14 +28,29 @@ function newDoctor() {
   return newDoc
 }
 
-function postear() {
+function postear(Object) {
   fetch("http://localhost:3000/doctors/", {
     method: "POST",
-    body: JSON.stringify(newDoctor()),
+    body: JSON.stringify(Object),
     headers: {
       "Content-Type": "application/json; charset=utf-8",
     },
   })
     .then((response) => response.json())
-    .then((response) => alert(`Bienvenido ${response.name}`))
+    .then((response) => response)
+}
+
+function obtener() {
+  let ObjDoc = newDoctor();
+  fetch("http://localhost:3000/doctors/")
+    .then((response) => response.json())
+    .then((response) => {
+      const filter = response.find(email => email.email == ObjDoc.email)
+      if (filter){
+        alert("el mail ya exsiste")
+      }else{
+        alert(`Bienvenido ${ObjDoc.name}`)
+        postear(ObjDoc)
+      }
+    });
 }
