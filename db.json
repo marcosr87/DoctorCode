@@ -1,20 +1,26 @@
 {
-  "doctors": [
+  "users": [
     {
       "name": "Marcos",
       "surname": "Ezequiel Ramos",
       "email": "marcosr_87@hotmail.com",
-      "license": "",
-      "speciality": "-selecciona-",
-      "password": "",
+      "license": "123",
+      "speciality": "Cardiologia",
+      "password": "aaa",
+      "isAprobed": false,
+      "isDoctor": false,
       "id": 1
-    }
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Gonzalo",
+      "surname": "Paz",
+      "email": "Gonzalo@yahoo.com",
+      "license": "666",
+      "speciality": "Cardiologia",
+      "password": "abc",
+      "isAprobed": false,
+      "isDoctor": true,
+      "id": 2
     }
   ]
 }
