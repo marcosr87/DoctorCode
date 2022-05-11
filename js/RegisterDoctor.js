@@ -10,20 +10,29 @@ class User {
     this.isDoctor = isDoctor
   }
 }
+let licenseHTML = null;
+let specialityHTML = "";
+
+if (window.location == "./LoginDoc.html"){
+ licenseHTML = document.getElementById('license');
+ specialityHTML = document.getElementById('floatingSelect');
+}
 
 let nameHTML = document.getElementById('name');
 let surnameHTML = document.getElementById('surname');
 let emailHTML = document.getElementById('email');
-let licenseHTML = document.getElementById('license');
-let specialityHTML = document.getElementById('floatingSelect');
 let passwordHTML = document.getElementById('password');
 
 function newUser() {
+  let licenseHTML = null;
+  let specialityHTML = "";
   let nameUsr = nameHTML.value;
   let surnameUsr = surnameHTML.value;
   let emailUsr = emailHTML.value;
-  let licenseUsr = licenseHTML.value;
-  let specialityUsr = specialityHTML.options[specialityHTML.selectedIndex].text;
+  if (window.location == "./LoginDoc.html"){
+  licenseUsr = licenseHTML.value;
+  specialityUsr = specialityHTML.options[specialityHTML.selectedIndex].text;
+  }
   let passwordUsr = passwordHTML.value;
   if ( window.location == "./Login.html"){
     isDoctor = false;
