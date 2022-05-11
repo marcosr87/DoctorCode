@@ -22,5 +22,15 @@
       "isDoctor": true,
       "id": 2
     }
+  ],
+
+  "turnos":[],
+  
+  "medicos": [
+    {
+      "nombre": "Sergio Gonzalez",
+      "especialidad": "Cardiología",
+      "id": 1
+    }
   ]
 }
