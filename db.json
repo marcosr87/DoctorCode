@@ -16,7 +16,7 @@
       "license": "123",
       "speciality": "Cardiologia",
       "password": "aaa",
-      "isAprobed": false,
+      "isAprobed": true,
       "isDoctor": false,
       "id": 1
     },
@@ -27,9 +27,31 @@
       "license": "666",
       "speciality": "Cardiologia",
       "password": "abc",
-      "isAprobed": false,
+      "isAprobed": true,
       "isDoctor": true,
       "id": 2
+    },
+    {
+      "name": "Sofia",
+      "surname": "Cobo",
+      "email": "sofiamariacobo@gmail.com",
+      "license": "123",
+      "speciality": "Neurologia",
+      "password": "123",
+      "isAprobed": true,
+      "isDoctor": true,
+      "id": 3
+    },
+    {
+      "name": "Marcos",
+      "surname": "Ramos",
+      "email": "mrcos@gmail.com",
+      "license": "1234",
+      "speciality": "Traumatologia",
+      "password": "1234",
+      "isAprobed": true,
+      "isDoctor": true,
+      "id": 7
     }
   ],
   "turnos": [

@@ -49,7 +49,8 @@ function postear(Object) {
     .then((response) => response)
 }
 
-function obtener() {
+function obtener(event) {
+  event.preventDefault();
   let ObjUsr = newUser();
   fetch("http://localhost:3000/users/")
     .then((response) => response.json())
