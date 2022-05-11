@@ -1,4 +1,13 @@
 {
+  "usuariosRegistrados": [
+    {
+      "id": 1,
+      "nombre": "Administrador",
+      "correo": "admin@correo.com",
+      "contraseña": "adm123",
+      "isAprobed": true
+    }
+  ],
   "users": [
     {
       "name": "Marcos",
@@ -23,14 +32,34 @@
       "id": 2
     }
   ],
-
-  "turnos":[],
-  
+  "turnos": [
+    {
+      "especialidad": "Cardiología",
+      "nombreMedico": "Sergio Gonzalez",
+      "fechaturno": "2022-05-12",
+      "horario": "09:00",
+      "consulta": "\"Dolor de pecho\"",
+      "id": 1
+    },
+    {
+      "especialidad": "Neurología",
+      "nombreMedico": "José Lopez",
+      "fechaturno": "2022-05-18",
+      "horario": "10:00",
+      "consulta": "\"Dolor de cabeza\"",
+      "id": 2
+    }
+  ],
   "medicos": [
     {
       "nombre": "Sergio Gonzalez",
       "especialidad": "Cardiología",
       "id": 1
+    },
+    {
+      "nombre": "José Lopez",
+      "especialidad": "Neurología",
+      "id": 2
     }
   ]
 }

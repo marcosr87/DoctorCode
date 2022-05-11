@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./css/styleturns.css" />
+    <link rel="stylesheet" href="./css/medicos.css" />
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
    
   </head>
@@ -84,57 +84,24 @@
         </div>
       </nav>
     </header>
-
-    
-      <section class="formulario">
-        <div>
-          <h2 class="h2-formulario">Reservar un turno</h2>
-        </div>
-        <div class="form-floating my-3" >
-          <select class="form-select" id="seleccion1" aria-label="Floating label select example" onchange="obtenerEsp()">
-            <option selected>-Selecciona-</option>
-            <option value="1">Cardiología</option>
-            <option value="2">Neurología</option>
-            <option value="3">Traumatología</option>
-            <option value="4">Kinesiología</option>
-            <option value="4">Pediatría</option>
-            <option value="4">Psicología</option>
-          </select>
-          <label for="floatingSelect"><b>Especialidad:</b></label>
-        </div>
-        <div class="form-floating">
-          <select class="form-select" id="seleccion2" aria-label="Floating label select example">
-
-          </select>
-          <label for="floatingSelect" id="seleccion11"><b> Profesional:</b></label>
-        </div>
-        <div class="form-floating my-3">
-          <input type="date" class="form-control" id="fecha1" placeholder="seleccione una fecha">
-          <label for="floatingInput">Seleccione una fecha</label>
-        </div>
-        <div class="form-floating my-3">
-          <select class="form-select" id="horarios" aria-label="Floating label select example">
-            <option selected>-Selecciona-</option>
-            <option value="08:00">08:00</option>
-            <option value="09:00">09:00</option>
-            <option value="10:00">10:00</option>
-            <option value="11:00">11:00</option>
-            <option value="12:00">12:00</option>
-          </select>
-          <label for="floatingSelect"><b> Horarios:</b></label>
-        </div>
-        <div class="form-floating">
-          <input type="text" class="form-control" placeholder="Leave a comment here" id="consulta" style="height: 100px">
-          <label for="floatingTextarea2">Escribir el motivo de su consulta.</label>
-        </div>
-        <button type="submit" class="button-reservar" id="btn-registrar" onclick="Registrar()">Reservar Turno</button>  
-      </section>
-      <br><br><br><br><br>
-      <button type="submit" class="button-reservar" onclick="mostrarTurno()">Mostrar turnos</button>
-      <section id="turno-paciente" class="d-flex justify-content-center">
-
-      </section>
-     <footer>
+        <button type="submit" class="button-mostrar" id="btn-mostrar" onclick="Mostrar()">Mostrar turnos</button> 
+    <div class="mt-5 table-responsive">
+        <table class="table align-middle">
+            <thead>
+                <tr class="align-bottom">
+                    <th scope="col">ID</th>
+                    <th scope="col">Especialidad</th>
+                    <th scope="col">Médico</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Horario</th>
+                    <th scope="col">Consulta</th>
+                </tr>
+            </thead>
+            <tbody id="contenido">
+                
+            </tbody>
+        </table>
+      </div><footer>
         <div class="footer-top">
             <div class="container">
               <div class="row">
@@ -193,7 +160,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
-  <script src="./js/turns.js"></script>
+  <script src="./js/medicos.js"></script>
 </body>
 </html>
+
