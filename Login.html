@@ -99,6 +99,7 @@
             <div class="input-field">
               <input
                 type="email"
+                id="emailUsers"
                 placeholder="Correo electrónico"
                 required
               />
@@ -107,6 +108,7 @@
             <div class="input-field">
               <input
                 type="password"
+                id="passUsers"
                 class="password"
                 placeholder="Contraseña"
                 required
@@ -125,7 +127,7 @@
             </div>
 
             <div class="input-field button">
-              <input type="submit" value="Iniciar Sesión" />
+              <input type="submit" onclick="Ingresar(event)" value="Iniciar Sesión" />
             </div>
           </form>
 
@@ -248,6 +250,6 @@
 ></script>
 <script src="./js/RegisterDoctor.js"></script>
 <script src="./js/scriptlogin.js"></script>
-  
+<script src="./js/loginUsers.js"></script>
 </body>
 </html>

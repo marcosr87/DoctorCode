@@ -37,7 +37,7 @@
       "email": "San_tiago@gmail.com",
       "password": "654",
       "isAprobed": true,
-      "isDoctor": true,
+      "isDoctor": false,
       "id": 8
     },
     {
@@ -66,6 +66,15 @@
       "isAprobed": false,
       "isDoctor": true,
       "id": 11
+    },
+    {
+      "name": "Gonzalo",
+      "surname": "paz",
+      "email": "gonzalopazok@gmail.com",
+      "password": "123",
+      "isAprobed": false,
+      "isDoctor": false,
+      "id": 12
     }
   ],
   "turnos": [
@@ -84,6 +93,14 @@
       "horario": "10:00",
       "consulta": "\"Dolor de cabeza\"",
       "id": 2
+    },
+    {
+      "especialidad": "Cardiología",
+      "nombreMedico": "Sergio Gonzalez",
+      "fechaturno": "2022-05-12",
+      "horario": "08:00",
+      "consulta": "\"ASasas\"",
+      "id": 3
     }
   ],
   "medicos": [

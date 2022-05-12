@@ -2,13 +2,30 @@ function Ingresar(event){
     event.preventDefault();
     let emailAdmin = document.getElementById('emailLogin').value;
     let passAdmin = document.getElementById('pass').value;
+   if (emailAdmin == "admin@correo.com"){
     fetch('http://localhost:3000/usuariosRegistrados')
     .then(response => response.json())
     .then(response => {        
       if(response[0].correo==emailAdmin && response[0].contraseña==passAdmin){
         window.location = "../admin.html";
       }
-    })  
+    }) 
+   }
+   else{
+    fetch('http://localhost:3000/users')
+    .then(response => response.json())
+    .then(response => {
+      const filter = response.find(item => item.email == emailAdmin)
+      if (filter.isAprobed == true){
+        if (filter.password == passAdmin) {
+          window.location = "./medicos.html"
+        }  
+      }else{
+        alert("Usuario no aprobado")
+      }
+          
+  })  
+   }
 }
   
 Mostrar();
