@@ -13,7 +13,7 @@ class User {
 let licenseHTML = null;
 let specialityHTML = "";
 
-if (window.location == "./LoginDoc.html"){
+if (window.location == "../LoginDoc.html"){
  licenseHTML = document.getElementById('license');
  specialityHTML = document.getElementById('floatingSelect');
 }
@@ -26,21 +26,28 @@ let passwordHTML = document.getElementById('password');
 function newUser() {
   let licenseHTML = null;
   let specialityHTML = "";
+  let licenseUsr;
+  let specialityUsr;
+  let isDoctor;
   let nameUsr = nameHTML.value;
   let surnameUsr = surnameHTML.value;
   let emailUsr = emailHTML.value;
-  if (window.location == "./LoginDoc.html"){
+  let passwordUsr = passwordHTML.value;
+  let isAprobedUSr = false;
+  if (window.location == "../LoginDoc.html"){
   licenseUsr = licenseHTML.value;
   specialityUsr = specialityHTML.options[specialityHTML.selectedIndex].text;
+  console.log(licenseUsr)
   }
-  let passwordUsr = passwordHTML.value;
-  if ( window.location == "./Login.html"){
+  if (window.location == "./Login.html"){
     isDoctor = false;
+    
   }else{
+   
     isDoctor = true;
   }
-  let isAprobedUSr = false; 
-
+  
+  console.log(isDoctor)
   let newUser = new User (nameUsr,surnameUsr,emailUsr,licenseUsr,specialityUsr,passwordUsr,isAprobedUSr,isDoctor);
   console.log(newUser);
   return newUser
@@ -58,8 +65,7 @@ function postear(Object) {
     .then((response) => response)
 }
 
-function obtener(event) {
-  event.preventDefault();
+function obtener() {
   let ObjUsr = newUser();
   fetch("http://localhost:3000/users/")
     .then((response) => response.json())
