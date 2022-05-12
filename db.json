@@ -10,28 +10,6 @@
   ],
   "users": [
     {
-      "name": "Marcos",
-      "surname": "Ezequiel Ramos",
-      "email": "marcosr_87@hotmail.com",
-      "license": "123",
-      "speciality": "Cardiologia",
-      "password": "aaa",
-      "isAprobed": true,
-      "isDoctor": false,
-      "id": 1
-    },
-    {
-      "name": "Gonzalo",
-      "surname": "Paz",
-      "email": "Gonzalo@yahoo.com",
-      "license": "666",
-      "speciality": "Cardiologia",
-      "password": "abc",
-      "isAprobed": true,
-      "isDoctor": true,
-      "id": 2
-    },
-    {
       "name": "Sofia",
       "surname": "Cobo",
       "email": "sofiamariacobo@gmail.com",
@@ -58,7 +36,7 @@
       "surname": "Rossi",
       "email": "San_tiago@gmail.com",
       "password": "654",
-      "isAprobed": false,
+      "isAprobed": true,
       "isDoctor": true,
       "id": 8
     },
@@ -88,42 +66,6 @@
       "isAprobed": false,
       "isDoctor": true,
       "id": 11
-    },
-    {
-      "name": "Jose",
-      "surname": "Perez",
-      "email": "jose@mail.com",
-      "password": "555",
-      "isAprobed": false,
-      "isDoctor": true,
-      "id": 12
-    },
-    {
-      "name": "Marcos",
-      "surname": "Ramos",
-      "email": "sofia@algo.com",
-      "password": "lala",
-      "isAprobed": false,
-      "isDoctor": true,
-      "id": 13
-    },
-    {
-      "name": "Javier",
-      "surname": "Garcia",
-      "email": "javier@xmen.com",
-      "password": "111",
-      "isAprobed": false,
-      "isDoctor": true,
-      "id": 14
-    },
-    {
-      "name": "ss",
-      "surname": "sss",
-      "email": "San_tiasssgo@gmail.com",
-      "password": "111",
-      "isAprobed": false,
-      "isDoctor": true,
-      "id": 15
     }
   ],
   "turnos": [

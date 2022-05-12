@@ -40,14 +40,11 @@ function newUser() {
   console.log(licenseUsr)
   }
   if (window.location == "./Login.html"){
-    isDoctor = false;
-    
-  }else{
-   
     isDoctor = true;
+  }else{
+    isDoctor = false;
   }
   
-  console.log(isDoctor)
   let newUser = new User (nameUsr,surnameUsr,emailUsr,licenseUsr,specialityUsr,passwordUsr,isAprobedUSr,isDoctor);
   console.log(newUser);
   return newUser
@@ -65,7 +62,8 @@ function postear(Object) {
     .then((response) => response)
 }
 
-function obtener() {
+function obtener(event) {
+  event.preventDefault();
   let ObjUsr = newUser();
   fetch("http://localhost:3000/users/")
     .then((response) => response.json())
