@@ -1,12 +1,25 @@
 let btnMostrar = document.getElementById('btn-mostrar');
+var ValorId = localStorage.getItem("Id");
+console.log(ValorId);
+
 
 function Mostrar(){
   let contenido = document.getElementById('contenido')
-  
+  let NameDoc;
+    fetch('http://localhost:3000/users')
+    .then(response => response.json())
+    .then(response => {
+      let filter = response.find(item => item.id == ValorId)
+      if (filter){
+        NameDoc = `${filter.name} ${filter.surname}`;
+        console.log(NameDoc)
+      }
+    })
     fetch('http://localhost:3000/turnos')
       .then(response => response.json())
       .then(response => {
-          
+       let filter2 = response.filter(item => item.nombreMedico == NameDoc )
+       if(filter2){ 
       contenido.innerHTML = ''
       for(let valor of response){
       contenido.innerHTML += `
@@ -20,7 +33,8 @@ function Mostrar(){
             <td class="align-top">${ valor.consulta}</td>
           </tr> 
         `
-        }
+      }
+    }
     })    
 }
 

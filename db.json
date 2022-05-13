@@ -59,11 +59,11 @@
       "id": 10
     },
     {
-      "name": "Lorena",
-      "surname": "Garcia",
+      "name": "Sergio",
+      "surname": "Gonzalez",
       "email": "ponele@gmail.com",
       "password": "555",
-      "isAprobed": false,
+      "isAprobed": true,
       "isDoctor": true,
       "id": 11
     },
@@ -75,6 +75,15 @@
       "isAprobed": false,
       "isDoctor": false,
       "id": 12
+    },
+    {
+      "name": "Sergio ",
+      "surname": "Gonzalez",
+      "email": "sergio@gmail.com",
+      "password": "444",
+      "isAprobed": true,
+      "isDoctor": true,
+      "id": 13
     }
   ],
   "turnos": [

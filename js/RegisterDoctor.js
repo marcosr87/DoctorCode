@@ -13,7 +13,7 @@ class User {
 let licenseHTML = null;
 let specialityHTML = "";
 
-if (window.location == "../LoginDoc.html"){
+if (window.location == "./LoginDoc.html"){
  licenseHTML = document.getElementById('license');
  specialityHTML = document.getElementById('floatingSelect');
 }
@@ -34,15 +34,15 @@ function newUser() {
   let emailUsr = emailHTML.value;
   let passwordUsr = passwordHTML.value;
   let isAprobedUSr = false;
-  if (window.location == "../LoginDoc.html"){
+  if (window.location == "./LoginDoc.html"){
   licenseUsr = licenseHTML.value;
   specialityUsr = specialityHTML.options[specialityHTML.selectedIndex].text;
   console.log(licenseUsr)
   }
   if (window.location == "./Login.html"){
-    isDoctor = true;
-  }else{
     isDoctor = false;
+  }else{
+    isDoctor = true;
   }
   
   let newUser = new User (nameUsr,surnameUsr,emailUsr,licenseUsr,specialityUsr,passwordUsr,isAprobedUSr,isDoctor);
