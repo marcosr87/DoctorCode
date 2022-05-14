@@ -59,15 +59,6 @@
       "id": 10
     },
     {
-      "name": "Sergio",
-      "surname": "Gonzalez",
-      "email": "ponele@gmail.com",
-      "password": "555",
-      "isAprobed": true,
-      "isDoctor": true,
-      "id": 11
-    },
-    {
       "name": "Gonzalo",
       "surname": "paz",
       "email": "gonzalopazok@gmail.com",
@@ -88,27 +79,27 @@
   ],
   "turnos": [
     {
-      "especialidad": "Cardiología",
-      "nombreMedico": "Sergio Gonzalez",
-      "fechaturno": "2022-05-12",
-      "horario": "09:00",
-      "consulta": "\"Dolor de pecho\"",
-      "id": 1
-    },
-    {
       "especialidad": "Neurología",
       "nombreMedico": "José Lopez",
       "fechaturno": "2022-05-18",
       "horario": "10:00",
       "consulta": "\"Dolor de cabeza\"",
+      "id": 1
+    },
+    {
+      "especialidad": "Cardiología",
+      "nombreMedico": "Sergio Gonzalez",
+      "fechaturno": "2022-05-29",
+      "horario": "08:00",
+      "consulta": "\"Covid\"",
       "id": 2
     },
     {
       "especialidad": "Cardiología",
       "nombreMedico": "Sergio Gonzalez",
-      "fechaturno": "2022-05-12",
-      "horario": "08:00",
-      "consulta": "\"ASasas\"",
+      "fechaturno": "2022-06-03",
+      "horario": "09:00",
+      "consulta": "\"Faringitis\"",
       "id": 3
     }
   ],
