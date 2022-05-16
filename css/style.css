@@ -212,6 +212,10 @@ footer .footer-links a:hover {
   color: rgb(84, 186, 185);
 }
 
+.card-insti :hover{
+  box-shadow: 7px 13px 39px -15px rgba(88,92,91,0.75);
+}
+
 @media (min-width: 320px){
   .portada-h{
       height: 250px;

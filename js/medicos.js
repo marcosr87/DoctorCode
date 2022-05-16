@@ -1,6 +1,5 @@
 let btnMostrar = document.getElementById('btn-mostrar');
 let ValorId = localStorage.getItem("Id");
-console.log(ValorId);
 let NameDoc = '';
 
 function Mostrar(){
@@ -12,20 +11,16 @@ function Mostrar(){
       let filter = response.find(item => item.id == ValorId)
       if (filter){
         NameDoc = `${filter.name} ${filter.surname}`;
-        console.log(NameDoc)
       }
     })
     fetch('http://localhost:3000/turnos')
       .then(response => response.json())
       .then(response => {
-       //let filter2 = response.filter(item => item.nombreMedico == NameDoc )
-      //  const result = response.filter((data) =>  data.nombreMedico.toLowerCase().includes(NameDoc.toLowerCase()))
+      
       contenido.innerHTML = '';
       for (let valor of response){
         
         if (valor.nombreMedico == NameDoc){
-          console.log(response.length)
-          console.log(valor.nombreMedico)
           contenido.innerHTML += `
             
         <tr class="align-bottom row-table">
@@ -41,23 +36,6 @@ function Mostrar(){
       }
     })    
   }
-    //    console.log(result)
-    //    if(result.length > 0){ 
-      
-    //   result.map((valor) => {
-    //   contenido.innerHTML += `
-            
-    //     <tr class="align-bottom row-table">
-    //       <th scope="row">${ valor.id }</th>
-    //         <td class="align-top">${ valor.especialidad }</td>
-    //         <td class="align-top">${ valor.nombreMedico }</td>
-    //         <td class="align-top">${ valor.fechaturno}</td>
-    //         <td class="align-top">${ valor.horario}</td>
-    //         <td class="align-top">${ valor.consulta}</td>
-    //       </tr> 
-    //     `
-    //   })
-    // }
     
 
 function Registrar(){
@@ -87,13 +65,6 @@ function Registrar(){
   .then(response => response.json())
   .then(response => console.log(response))
 
-  swal('Usuario creado','','success');
-  // swal({
-  //   title: "Turno registrado",
-  //   timer: 500000,
-  //   icon: "success",
-  //   button: "Gracias",
-  // });
 }
 
 function Exit(){

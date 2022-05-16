@@ -32,126 +32,16 @@
       "rol": "paciente",
       "isAprobed": true,
       "id": 3
-    },
-    {
-      "name": "Sofia",
-      "surname": "Cobo",
-      "email": "sofiamariacobo@gmail.com",
-      "license": "3456",
-      "speciality": "Neurología",
-      "password": "12345678",
-      "isAprobed": true,
-      "rol": "medico",
-      "id": 21
-    },
-    {
-      "name": "Matias",
-      "surname": "Gonzalez",
-      "email": "matiasgonzalez@gmail.com",
-      "password": "12345678",
-      "isAprobed": true,
-      "rol": "paciente",
-      "id": 22
-    },
-    {
-      "name": "Gonzalo",
-      "surname": "paz",
-      "email": "gonzalopazok@gmail.com",
-      "license": "111",
-      "speciality": "Kinesiología",
-      "password": "12345678",
-      "isAprobed": false,
-      "rol": "medico",
-      "id": 24
-    },
-    {
-      "name": "Gonzalo",
-      "surname": "paz",
-      "email": "ggonzalopazok@gmail.com",
-      "password": "12345678",
-      "isAprobed": true,
-      "rol": "paciente",
-      "id": 25
-    },
-    {
-      "name": "Gonzalo",
-      "surname": "paz",
-      "email": "gggonzalopazok@gmail.com",
-      "license": "123",
-      "speciality": "Traumatología",
-      "password": "12345678",
-      "isAprobed": true,
-      "rol": "medico",
-      "id": 26
     }
   ],
   "turnos": [
-    {
-      "especialidad": "Neurología",
-      "nombreMedico": "José Lopez",
-      "fechaturno": "2022-05-18",
-      "horario": "10:00",
-      "consulta": "\"Dolor de cabeza\"",
-      "id": 1,
-      "idPaciente": 3
-    },
-    {
-      "especialidad": "Cardiología",
-      "nombreMedico": "Sergio Gonzalez",
-      "fechaturno": "2022-05-29",
-      "horario": "08:00",
-      "consulta": "\"Covid\"",
-      "id": 2
-    },
-    {
-      "especialidad": "Cardiología",
-      "nombreMedico": "Sergio Gonzalez",
-      "fechaturno": "2022-06-03",
-      "horario": "09:00",
-      "consulta": "\"Faringitis\"",
-      "id": 3
-    },
-    {
-      "especialidad": "Traumatología",
-      "nombreMedico": "Roberto Díaz",
-      "fechaturno": "2022-06-03",
-      "horario": "09:00",
-      "consulta": "\"Dolor de espalda\"",
-      "id": 3
-    },
-    {
-      "especialidad": "Traumatología",
-      "nombreMedico": "Roberto Díaz",
-      "fechaturno": "2022-05-13",
-      "horario": "09:00",
-      "consulta": "\"Esguince de tobillo\"",
-      "id": 4
-    },
-    {
-      "especialidad": "Cardiología",
-      "nombreMedico": "Marcos Ezequiel Ramos",
-      "fechaturno": "2022-05-18",
-      "horario": "09:00",
-      "consulta": "\"Consulta mensual\"",
-      "idPaciente": "22",
-      "id": 5
-    },
-    {
-      "especialidad": "Neurología",
-      "nombreMedico": "Sofia Cobo",
-      "fechaturno": "2022-05-18",
-      "horario": "10:00",
-      "consulta": "\"Consulta post-operatoria\"",
-      "idPaciente": "22",
-      "id": 6
-    },
     {
       "especialidad": "Cardiología",
       "nombreMedico": "Roberto Díaz",
       "fechaturno": "2022-05-17",
       "horario": "10:00",
       "consulta": "\"Consulta\"",
-      "idPaciente": "22",
+      "idPaciente": "3",
       "id": 7
     },
     {
@@ -160,7 +50,7 @@
       "fechaturno": "2022-05-26",
       "horario": "08:00",
       "consulta": "\"asdsad\"",
-      "idPaciente": "25",
+      "idPaciente": "3",
       "id": 8
     }
   ]

@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/styleRegister.css" />
+    <!-- <link rel="stylesheet" href="./css/styleRegister.css" /> -->
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -43,15 +43,22 @@
                 <a
                   class="nav-link active text-nav fw-bold"
                   aria-current="page"
-                  href="#inicio"
+                  href="./index.html"
                 
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-nav fw-bold" href="./institucional.html"
-                  >Institucional</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-nav fw-bold"
+                  href="#cards"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Institucional
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-nav fw-bold" href="./admin.html"
@@ -62,7 +69,7 @@
                 <a class="nav-link text-nav fw-bold" href="./turns.html">Turnos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-nav fw-bold" href="#contacto">Contacto</a>
+                <a class="nav-link text-nav fw-bold" href="index.html">Contacto</a>
               </li>
               <li class="nav-item d-block" id="ingreso">
                 <a class="nav-link text-nav fw-bold" href="./Login.html">Ingresar</a>
@@ -80,135 +87,39 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section id="carousel" class="container-fix">
-        <div id="portada" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#portada"
-              data-bs-slide-to="0"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#portada"
-              data-bs-slide-to="1"
-              class="active"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#portada"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/portada1_1.png" class="d-block w-100 portada-h" alt="Portada"/>
-            </div>
-            <div class="carousel-item">
-              <img src="./img/portada2_2.png" class="d-block w-100 portada-h" alt="Portada"/>
-            </div>
-            <div class="carousel-item">
-              <img src="./img/portada3_3.png" class="d-block w-100 portada-h" alt="Portada"/>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#portada" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#portada" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <section class="section-button">
-        <a href="./turns.html"><button type="button" class="btn btn-primary btn-lg button-form">RESERVE SU TURNO</button></a>
-      </section>
-
-      <section>
-        <div class="container-fluid my-3">
-          <div class="row d-flex justify-content-center">
-            <div class="col-4 mx-5 img-telmed d-none d-mg-block d-lg-block">
-              <img src="./img/telemedicina.png" alt="Telemedicina" width="360px" height="400px"/>
-            </div>
-            <div class="col-8 telemedicina texto-telmed">
-                <p class="text-med m-2 p-4">
-                  <strong>¡Con telemedicina, te atendemos desde tu casa!</strong><br><br>
-                  <span
-                    >En relación a la situación que nos toca atravesar por la
-                    pandemia Coronavirus (COVID-19), queremos comunicarles que en
-                    Medical Code Center el bienestar de nuestros pacientes y
-                    de nuestro equipo de trabajo es prioridad absoluta. Por eso
-                    hemos implementado un método para poder atenderte desde tu
-                    casa. Vas a poder hacer tus consultas a través de una
-                    videollamada de WhatsApp, y en caso que el médico considere
-                    necesario puedas hacerte estudios de rayos x, resonancia y/o
-                    tomografía.</span
-                  >
-                </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contacto">
-        <div class="contacto">
-          <h3>Contacto</h3>
-        </div>
-      </section>
-      <section class="container card-contacto  my-5">
+    <section class="container section-institucional">
         <div class="row d-flex justify-content-around">
-         <div class="card col-ms-12 my-3" style="width: 18rem;">
-          <h5 class="card-title">TELEFONO</h5>
-          <div class="card-body">
-           
-            <p><b>(0381) 430-3260</b></p>
-            <p class="card-text">Para solicitar turnos, comunicarse de lunes a viernes de 8:30 a 20:00 hs.</p>
-            
-          </div>
-        </div>
-        <div class="card col-ms-12 my-3" style="width: 18rem;">
-          <h5 class="card-title"> WhatsApp</h5>
-          <div class="card-body card-contenido">
-            
-            <p><b>(0381) 153521990</b></p>
-            <p class="card-text">Solo se reciben mensajes. Comunicarse de lunes a viernes de 8:30 a 20:00 hs.</p>
-            
-          </div>
-        </div>
-
-      </div>
-      </section>
-
-      <br>
-
-      <section>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6 column-icon">
-              <div class="column-content">
-                <i class="fa fa-user-md fa-3x" aria-hidden="true"></i>
-                <h4>Atención al paciente</h4>
-                <p>Llame al <strong>(381) 4 222922</strong></p>
-              </div>
+        <div class="card card-insti mx-3 my-3" style="width: 25rem;">
+            <div class="card-body">
+              <h5 class="card-title">¿Quiénes somos?</h5>
+              <p class="card-text">Medical Code Center fue creado por un grupo de estudiantes de programacion full stack.
+                  Este proyecto tiene como finalidad demostrar lo aprendido en el transcurso del cursado para ser evaluado y recibir criticas constructivas para seguir mejorando en nuestro camino como programadores.  
+              </p>
             </div>
-            <div class="col-md-6 column-icon">
-              <div class="column-content">
-                <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
-                <h4>Dirección</h4>
-                <p><strong>25 de Mayo 750 - San Miguel de Tucumán</strong></p>
-              </div>
+          </div>
+          <div class="card card-insti mx-3 my-3" style="width: 25rem; height: fit-content;">
+            <div class="card-body">
+              <h5 class="card-title">Misión</h5>
+              <p class="card-text">El Servicio de Medical Code Center es un equipo de trabajo dedicado a la educación cuaternaria, donde los pilares son la investigación científica y la creatividad; y apoyamos la capacitación continua de nuestros profesionales logrando médicos especialistas que se dedican con excelencia al tratamiento de pacientes.</p>
             </div>
-            <div></div>
+          </div>
+          <div class="card card-insti mx-3 my-3" style="width: 25rem; height: fit-content;">
+            <div class="card-body">
+              <h5 class="card-title"> Visión</h5>
+              <p class="card-text">Queremos ser centro de referencia a nivel nacional en patologías de alta complejidad en Ortopedia y Traumatología, contando con médicos altamente capacitados y tecnología a la altura de los grandes centros mundiales.</p>
+            </div>
+          </div>
+          <div class="card card-insti mx-3 my-3" style="width: 25rem; height: fit-content;">
+            <div class="card-body">
+              <h5 class="card-title">Educación Cuaternaria</h5>
+              <p class="card-text">El objetivo de la Educación Cuaternaria es profundizar y actualizar la formación cultural, docente, científica, artística y tecnológica mediante la investigación, la reflexión critica sobre la disciplina y el intercambio sobre los avances en las especialidades.
+                Esta Institución cree firmemente en los principios de la Educación Cuaternaria y pretendemos formar profesionales de reconocido nivel aplicando la creatividad y la investigación como fundamento primario de la educación.</p>
+            </div>
           </div>
         </div>
-      </section>
-
-      <footer>
+     </div>
+    </section>
+    <footer>
         <div class="footer-top">
           <div class="container">
             <div class="row">

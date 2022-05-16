@@ -120,8 +120,6 @@ function habilitarBotonLogin(campo){
   }
 }
 
-  // document.getElementById('ingreso').style.display = "none";
-  // document.getElementById('miCuenta').style.display = "block";
 
 
 
