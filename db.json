@@ -63,6 +63,26 @@
       "isAprobed": false,
       "rol": "medico",
       "id": 24
+    },
+    {
+      "name": "Gonzalo",
+      "surname": "paz",
+      "email": "ggonzalopazok@gmail.com",
+      "password": "12345678",
+      "isAprobed": true,
+      "rol": "paciente",
+      "id": 25
+    },
+    {
+      "name": "Gonzalo",
+      "surname": "paz",
+      "email": "gggonzalopazok@gmail.com",
+      "license": "123",
+      "speciality": "Traumatología",
+      "password": "12345678",
+      "isAprobed": true,
+      "rol": "medico",
+      "id": 26
     }
   ],
   "turnos": [
@@ -133,6 +153,15 @@
       "consulta": "\"Consulta\"",
       "idPaciente": "22",
       "id": 7
+    },
+    {
+      "especialidad": "Cardiología",
+      "nombreMedico": "Roberto Díaz",
+      "fechaturno": "2022-05-26",
+      "horario": "08:00",
+      "consulta": "\"asdsad\"",
+      "idPaciente": "25",
+      "id": 8
     }
   ]
 }
