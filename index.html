@@ -16,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleRegister.css" />
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -43,6 +44,7 @@
                   class="nav-link active text-nav fw-bold"
                   aria-current="page"
                   href="#inicio"
+                
                   >Inicio</a
                 >
               </li>
@@ -69,13 +71,15 @@
               <li class="nav-item">
                 <a class="nav-link text-nav fw-bold" href="#contacto">Contacto</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item d-block" id="ingreso">
+                <a class="nav-link text-nav fw-bold" href="./Login.html">Ingresar</a>
+              </li>
+              <li class="nav-item dropdown d-none" id="miCuenta">
                 <a class="nav-link dropdown-toggle text-nav fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Ingresar
+                  Mi cuenta
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./Login.html">Paciente</a></li>
-                  <li><a class="dropdown-item" href="./LoginDoc.html">Médico</a></li>
+                  <li><a onclick="Exit()" class="dropdown-item" href="#">Cerrar sesión</a></li>
                 </ul>
               </li>
             </ul>
@@ -136,8 +140,8 @@
       <section>
         <div class="container-fluid my-3">
           <div class="row d-flex justify-content-center">
-            <div class="col-4 img-telmed d-none d-mg-block d-lg-block">
-              <img src="./img/telemedicina.png" alt="Telemedicina" width="400px" height="400px"/>
+            <div class="col-4 mx-5 img-telmed d-none d-mg-block d-lg-block">
+              <img src="./img/telemedicina.png" alt="Telemedicina" width="360px" height="400px"/>
             </div>
             <div class="col-8 telemedicina texto-telmed">
                 <p class="text-med m-2 p-4">
@@ -157,6 +161,34 @@
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <div class="contacto">
+          <h3>Contacto</h3>
+        </div>
+      </section>
+      <section class="container card-contacto  my-5">
+        <div class="row d-flex justify-content-around">
+         <div class="card col-ms-12 my-3" style="width: 18rem;">
+          <h5 class="card-title">TELEFONO</h5>
+          <div class="card-body">
+           
+            <p><b>(0381) 430-3260</b></p>
+            <p class="card-text">Para solicitar turnos, comunicarse de lunes a viernes de 8:30 a 20:00 hs.</p>
+            
+          </div>
+        </div>
+        <div class="card col-ms-12 my-3" style="width: 18rem;">
+          <h5 class="card-title"> WhatsApp</h5>
+          <div class="card-body card-contenido">
+            
+            <p><b>(0381) 153521990</b></p>
+            <p class="card-text">Solo se reciben mensajes. Comunicarse de lunes a viernes de 8:30 a 20:00 hs.</p>
+            
+          </div>
+        </div>
+
+      </div>
       </section>
 
       <br>
@@ -243,5 +275,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/nav.js"></script>
+    <!-- <script src="./js/admin.js"></script> -->
   </body>
 </html>

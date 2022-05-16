@@ -67,6 +67,14 @@ body{
   overflow: hidden;
 }
 
+/* #ingreso{
+  display: block;
+}
+
+#miCuenta{
+  display: none;
+} */
+
 /*ESTILOS BUTTON*/
 .section-button{
   background-color: #e9efc09a;
@@ -89,6 +97,28 @@ body{
   background:white;
   color: #a6ab889a;
   border: white;
+}
+
+
+/*ESTILOS CONTACTO*/
+.contacto{
+  background-color: #e9efc09a;
+  padding: 20px;
+  text-align: center;
+}
+.h5-contact{
+  
+  background-color: #e9efc09a;
+}
+.card{
+  background-color: #e9efc09a;
+}
+.card h5{
+  background-color: #a6ab889a;
+  text-align: center;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
 }
 /* ESTILOS FOOTER */
 

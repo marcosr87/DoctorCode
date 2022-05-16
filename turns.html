@@ -72,11 +72,11 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-nav fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Ingresar
+                  Mi cuenta
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Paciente</a></li>
-                  <li><a class="dropdown-item" href="#">Médico</a></li>
+                  <li><a class="dropdown-item" href="#">Mis turnos</a></li>
+                  <li><a onclick="Exit()" class="dropdown-item" href="#">Cerrar sesión</a></li>
                 </ul>
               </li>
             </ul>
@@ -97,8 +97,6 @@
             <option value="2">Neurología</option>
             <option value="3">Traumatología</option>
             <option value="4">Kinesiología</option>
-            <option value="4">Pediatría</option>
-            <option value="4">Psicología</option>
           </select>
           <label for="floatingSelect"><b>Especialidad:</b></label>
         </div>
@@ -195,5 +193,6 @@
   ></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
   <script src="./js/turns.js"></script>
+  <script src="./js/nav.js"></script>
 </body>
 </html>

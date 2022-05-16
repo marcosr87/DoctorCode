@@ -46,7 +46,12 @@ body{
     color: #a6ab889a;
     
   }
-
+  .card{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #e9efc09a;
+    align-items: center;
+  }
   /* ESTILOS FOOTER */
 
 .footer-top {

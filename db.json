@@ -1,80 +1,68 @@
 {
-  "usuariosRegistrados": [
-    {
-      "id": 1,
-      "nombre": "Administrador",
-      "correo": "admin@correo.com",
-      "contraseña": "adm123",
-      "isAprobed": true
-    }
-  ],
   "users": [
+    {
+      "name": "José",
+      "surname": "Perez",
+      "email": "josePerez@gmail.com",
+      "password": "12345678",
+      "license": "",
+      "speciality": "",
+      "rol": "admin",
+      "isAprobed": true,
+      "id": 1
+    },
+    {
+      "name": "Roberto",
+      "surname": "Díaz",
+      "email": "diazRoberto@gmail.com",
+      "password": "12345678",
+      "license": "",
+      "speciality": "Cardiología",
+      "rol": "medico",
+      "isAprobed": true,
+      "id": 2
+    },
+    {
+      "nombre": "Pedro",
+      "apellido": "Carrizo",
+      "email": "pedroCarrizo@gmail.com",
+      "password": "12345678",
+      "license": "",
+      "speciality": "",
+      "rol": "paciente",
+      "isAprobed": true,
+      "id": 3
+    },
     {
       "name": "Sofia",
       "surname": "Cobo",
       "email": "sofiamariacobo@gmail.com",
-      "license": "123",
-      "speciality": "Neurologia",
-      "password": "123",
+      "license": "3456",
+      "speciality": "Neurología",
+      "password": "12345678",
       "isAprobed": true,
-      "isDoctor": true,
-      "id": 3
+      "rol": "medico",
+      "id": 21
     },
     {
-      "name": "Marcos",
-      "surname": "Ramos",
-      "email": "mrcos@gmail.com",
-      "license": "1234",
-      "speciality": "Traumatologia",
-      "password": "1234",
+      "name": "Matias",
+      "surname": "Gonzalez",
+      "email": "matiasgonzalez@gmail.com",
+      "password": "12345678",
       "isAprobed": true,
-      "isDoctor": true,
-      "id": 7
-    },
-    {
-      "name": "Santiago",
-      "surname": "Rossi",
-      "email": "San_tiago@gmail.com",
-      "password": "654",
-      "isAprobed": true,
-      "isDoctor": false,
-      "id": 8
-    },
-    {
-      "name": "Perez",
-      "surname": "Manuel",
-      "email": "lcsmdq@hotmail.com",
-      "password": "666",
-      "isAprobed": false,
-      "isDoctor": true,
-      "id": 9
-    },
-    {
-      "name": "Manuel",
-      "surname": "Garcia",
-      "email": "manu@gmail.com",
-      "password": "321",
-      "isAprobed": false,
-      "isDoctor": true,
-      "id": 10
+      "rol": "paciente",
+      "id": 22
     },
     {
       "name": "Gonzalo",
       "surname": "paz",
       "email": "gonzalopazok@gmail.com",
-      "password": "123",
+      "license": "111",
+      "speciality": "Kinesiología",
+      "password": "12345678",
       "isAprobed": false,
-      "isDoctor": false,
-      "id": 12
-    },
-    {
-      "name": "Sergio ",
-      "surname": "Gonzalez",
-      "email": "sergio@gmail.com",
-      "password": "444",
-      "isAprobed": true,
-      "isDoctor": true,
-      "id": 13
+      "rol": "medico",
+      "id": 24
     }
   ],
   "turnos": [
@@ -84,7 +72,8 @@
       "fechaturno": "2022-05-18",
       "horario": "10:00",
       "consulta": "\"Dolor de cabeza\"",
-      "id": 1
+      "id": 1,
+      "idPaciente": 3
     },
     {
       "especialidad": "Cardiología",
@@ -101,18 +90,49 @@
       "horario": "09:00",
       "consulta": "\"Faringitis\"",
       "id": 3
-    }
-  ],
-  "medicos": [
-    {
-      "nombre": "Sergio Gonzalez",
-      "especialidad": "Cardiología",
-      "id": 1
     },
     {
-      "nombre": "José Lopez",
+      "especialidad": "Traumatología",
+      "nombreMedico": "Roberto Díaz",
+      "fechaturno": "2022-06-03",
+      "horario": "09:00",
+      "consulta": "\"Dolor de espalda\"",
+      "id": 3
+    },
+    {
+      "especialidad": "Traumatología",
+      "nombreMedico": "Roberto Díaz",
+      "fechaturno": "2022-05-13",
+      "horario": "09:00",
+      "consulta": "\"Esguince de tobillo\"",
+      "id": 4
+    },
+    {
+      "especialidad": "Cardiología",
+      "nombreMedico": "Marcos Ezequiel Ramos",
+      "fechaturno": "2022-05-18",
+      "horario": "09:00",
+      "consulta": "\"Consulta mensual\"",
+      "idPaciente": "22",
+      "id": 5
+    },
+    {
       "especialidad": "Neurología",
-      "id": 2
+      "nombreMedico": "Sofia Cobo",
+      "fechaturno": "2022-05-18",
+      "horario": "10:00",
+      "consulta": "\"Consulta post-operatoria\"",
+      "idPaciente": "22",
+      "id": 6
+    },
+    {
+      "especialidad": "Cardiología",
+      "nombreMedico": "Roberto Díaz",
+      "fechaturno": "2022-05-17",
+      "horario": "10:00",
+      "consulta": "\"Consulta\"",
+      "idPaciente": "22",
+      "id": 7
     }
   ]
 }

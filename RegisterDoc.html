@@ -20,7 +20,7 @@
     href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
   />
    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/styleLogin.css">
+    <link rel="stylesheet" href="./css/styleRegister.css">
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
   </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -82,85 +82,44 @@
       </div>
     </nav>
   </header>
-<!-- ----------------------- login -->
-  <section class="FormLogin">
+  <section class="FormLoginDoc">
     <div class="containerlogin">
       <div class="forms">
-        <div class="form login">
-          <span class="title">Acceso</span>
+      <div class="form signup">
+    <span class="title">Registro Doctor</span>
 
-          <form class="form_login">
-            <div class="input-field">
-              <input
-                type="email"
-                id="emailUsers"
-                placeholder="Correo electrónico"
-                required
-                onblur="verificar(this)"
-              />
-              <i class="uil uil-envelope icon"></i>
-            </div>
-            <p id="msgEmailLogin" class="form_error_imput">El correo ingresado no cumple con la condición</p>
-            <div class="input-field">
-              <input
-                type="password"
-                id="passUsers"
-                class="password"
-                placeholder="Contraseña"
-                required
-                onblur="verificar(this)"
-              />
-              <i class="uil uil-lock icon"></i>
-              <i class="uil uil-eye-slash showHidePw"></i>
-            </div>
-            <p class="form_error_imput" id="msgPasswordLogin">La contraseña no cumple con lo requerido</p>
-
-            <div class="checkbox-text">
-              <div class="checkbox-content">
-                <input type="checkbox" id="logCheck" />
-                <label for="logCheck" class="text">Recordar nombre de usuario</label>
-              </div>
-
-              <a href="#" class="text">¿Olvidó su nombre de usuario o contraseña?</a>
-            </div>
-
-            <div class="input-field button">
-              <input type="submit" disabled="true" id="buttonLogin" value="Iniciar Sesión" />
-            </div>
-            <p class="form_error_imput" id="msgButtonLogin">No se encuentra el usuario</p>
-          </form>
-
-          <div class="login-signup">
-            <span class="text"
-              >¿No es miembro?
-              <a href="#" class="text signup-link">Regístrate ahora</a>
-            </span>
-            <br>
-            <span class="text"
-              >¿Eres medico y no estas registrado?
-              <a href="./RegisterDoc.html" class="text signup-link">Regístrate ahora</a>
-            </span>
-          </div>
-        </div>
-  
-
-  <!-- Registration Form -->
-  <div class="form signup">
-    <span class="title">Registro</span>
-
-    <form action="#">
+    <form action="./Login.html">
       <div class="input-field">
-        <input id ="name" type="text" placeholder="Introduzca su nombre" required />
+        <input id="name" type="text" placeholder="Introduzca su nombre" maxlength="18" required onblur="registerVerification(this)"/>
         <i class="uil uil-user"></i>
       </div>
+      <p class="form_error_imput" id="error-nameRegister">No cumple con las condiciones</p>
       <div class="input-field">
-        <input id="surname" type="text" placeholder="Introduzca su apellido" required />
+        <input id="surname" type="text" placeholder="Introduzca su apellido" maxlength="18" required onblur="registerVerification(this)"/>
         <i class="uil uil-user"></i>
       </div>
+      <p class="form_error_imput" id="error-surnameRegister">No cumple con las condiciones</p>
       <div class="input-field">
-        <input id="email" type="email" placeholder="Introduce tu correo electrónico" required />
+        <input id="email" type="email" placeholder="Introduce tu correo electrónico" required onblur="registerVerification(this)"/>
         <i class="uil uil-envelope icon"></i>
       </div>
+      <p class="form_error_imput" id="error-emailRegister">No cumple con las condiciones</p>
+      <div class="input-field">
+        <input id="license" type="number" placeholder="Introduzca su matricula" maxlength="6" required />
+        <i class="uil-university"></i>
+      </div>
+      <div class="field my-3 pt-0 " id ="ComboSpecialtys" >
+        <i class="uil-bag"></i>
+        <label class="fieldLabel"  for="floatingSelect">Especialidad</label>
+        <select class="form-select" id="floatingSelect" aria-label="Floating label" required onblur="registerVerification(this)">
+          <option selected>-selecciona-</option>
+          <option value="1">Cardiología</option>
+          <option value="2">Neurología</option>
+          <option value="3">Traumatología</option>
+          <option value="4">Kinesiología</option>
+        </select>
+      </div>
+      <p class="form_error_imput" id="error-specialityRegister">No cumple con las condiciones</p>
       <div class="input-field">
         <input
           id="password"
@@ -168,31 +127,33 @@
           class="password"
           placeholder="Crea una contraseña"
           required
+          onblur="registerVerification(this)"
         />
         <i class="uil uil-lock icon"></i>
       </div>
-        <div class="input-field">
-          <input type="password" class="password" placeholder="Repita contraseña" required>
+      <p class="form_error_imput" id="error-passwordRegister">No cumple con las condiciones</p>
+      <div class="input-field">
+          <input type="password" class="password" id="passwordRepeat" placeholder="Repita contraseña" required onblur="registerVerification(this)">
           <i class="uil uil-lock icon"></i>
           <i class="uil uil-eye-slash showHidePw"></i>
       </div>
+      <p class="form_error_imput" id="error-repeatPasswordRegister">No cumple con las condiciones</p>
 
       <div class="input-field button">
-        <input onclick="obtener(event)" type="submit" value="Registrarse" />
+        <input class="botonRegistro" onclick="obtener(event)" type="submit" id="buttonRegister" value="Registrarse" />
       </div>
     </form>
-
-    <div class="login-signup">
-      <span class="text"
-        >Ya eres miembro
-        <a href="#" class="text login-link">Acceso</a>
-      </span>
+      <div class="login-signup">
+        <span class="text"
+          >Ya eres miembro
+          <a href="./Login.html" class="text login-link">Acceso</a>
+        </span>
+        </div>
     </div>
   </div>
 </div>
-</div>
-</section>
-
+    
+  </section>
   <footer>
     <div class="footer-top">
       <div class="container">
@@ -253,9 +214,8 @@
   crossorigin="anonymous"
 ></script>
 <script src="./js/RegisterDoctor.js"></script>
-<script src="./js/scriptlogin.js"></script>
-<!-- <script src="./js/loginUsers.js"></script> -->
-<script src="./js/login.js"></script>
+
+
 
 </body>
 </html>

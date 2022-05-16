@@ -7,19 +7,23 @@ let esp, prof, fecha, hora, consulta1;
 let btnRegistrar = document.getElementById('btn-registrar');
 let btnMostrar = document.getElementById('btn-mostrar');
 let fila = document.getElementById('fila11');
+let NameDoc = '';
 
 function obtenerEsp(){
   esp = especialidadHTML.options[especialidadHTML.selectedIndex].text;
 
-  fetch('http://localhost:3000/medicos')
+  fetch('http://localhost:3000/users')
     .then(response => response.json())
-    .then(response => {        
-      profesionalHTML.innerHTML = ''
-      for(let valor of response){
-        if(valor.especialidad==esp){
-          profesionalHTML.innerHTML += `
-            <option>${valor.nombre}</option>
-          `
+    .then(response => {  
+      const arrayMedico = response.filter(item => item.rol == "medico");    
+      if(arrayMedico){
+        profesionalHTML.innerHTML = ''
+        for(let valor of arrayMedico){
+          if(valor.speciality==esp){
+            profesionalHTML.innerHTML += `
+              <option>${valor.name} ${valor.surname}</option>
+            `
+          }
         }
       }
     })
@@ -38,7 +42,8 @@ function Registrar(){
       nombreMedico: prof,
       fechaturno: fecha,
       horario: hora,
-      consulta: consulta1
+      consulta: consulta1,
+      idPaciente: localStorage.getItem("Id")
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
@@ -48,14 +53,17 @@ function Registrar(){
   .then(response => console.log(response))
 }
 
+let ValorId = localStorage.getItem("Id");
+
 function mostrarTurno (){
   let turnos = document.getElementById('turno-paciente')
+  turnos.innerHTML = '';
 
   fetch('http://localhost:3000/turnos')
     .then(response => response.json())
     .then(response => {        
       for(let valor of response){
-        if (valor.especialidad == 'Cardiología'){
+        if (valor.idPaciente == ValorId){
           turnos.innerHTML += `
           <div class="card mx-3" style="width: 18rem;">
           <div class="card-body">
@@ -67,4 +75,15 @@ function mostrarTurno (){
          }
       }
     })
+}
+
+function Exit(){
+  localStorage.clear();
+  window.location.href = "./Login.html"
+}
+
+if (JSON.parse(localStorage.getItem("Role")) == "paciente"){
+  alert("Hola")
+}else{
+  window.location = "../index.html";
 }

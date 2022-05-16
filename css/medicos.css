@@ -125,3 +125,29 @@ footer .footer-links a:hover {
   text-transform: uppercase;
   color: rgb(84, 186, 185);
 }
+
+  /* .title-admin{
+    background-color: #e9efc09a;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  .table-responsive{
+    border: solid;
+    border-color: #9fa3859a;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    
+  }
+
+  .table{
+    margin: auto;
+  }
+
+  @media (min-width:960px){
+    .table-responsive{
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  } */

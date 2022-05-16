@@ -1,5 +1,5 @@
 let btnMostrar = document.getElementById('btn-mostrar');
-var ValorId = localStorage.getItem("Id");
+let ValorId = localStorage.getItem("Id");
 console.log(ValorId);
 let NameDoc = '';
 
@@ -11,7 +11,7 @@ function Mostrar(){
     .then(response => {
       let filter = response.find(item => item.id == ValorId)
       if (filter){
-        NameDoc = `${filter.name}${filter.surname}`;
+        NameDoc = `${filter.name} ${filter.surname}`;
         console.log(NameDoc)
       }
     })
@@ -94,4 +94,15 @@ function Registrar(){
   //   icon: "success",
   //   button: "Gracias",
   // });
+}
+
+function Exit(){
+  localStorage.clear();
+  window.location.href = "./Login.html"
+}
+
+if (JSON.parse(localStorage.getItem("Role")) == "medico"){
+  alert("Hola")
+}else{
+  window.location = "../index.html";
 }
