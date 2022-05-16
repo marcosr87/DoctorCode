@@ -52,6 +52,24 @@
       "consulta": "\"asdsad\"",
       "idPaciente": "3",
       "id": 8
+    },
+    {
+      "especialidad": "Kinesiología",
+      "nombreMedico": "Gonzalo paz",
+      "fechaturno": "2022-05-18",
+      "horario": "12:00",
+      "consulta": "\"Dolor de Rodilla\"",
+      "idPaciente": "3",
+      "id": 9
+    },
+    {
+      "especialidad": "Traumatología",
+      "nombreMedico": "Gonzalo paz",
+      "fechaturno": "2022-05-19",
+      "horario": "12:00",
+      "consulta": "\"Dolores varios\"",
+      "idPaciente": "3",
+      "id": 10
     }
   ]
 }
