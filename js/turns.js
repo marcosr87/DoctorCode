@@ -82,8 +82,9 @@ function Exit(){
   window.location.href = "./Login.html"
 }
 
-if (JSON.parse(localStorage.getItem("Role")) == "paciente"){
-  alert("Hola")
+if (localStorage.getItem("Role") == "paciente"){
+  console.log("Hola")
 }else{
   window.location = "../index.html";
 }
+
