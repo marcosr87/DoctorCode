@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: #ffffff;
+  background-color: #e9efc09a;
 }
 
 .navbar{
@@ -28,6 +28,7 @@ body{
     border: outset;
     border-radius: 6px;
     border-color: #e9efc09a;
+    background-color: white;
   }
   .button-reservar{
     width: 40%;
@@ -150,6 +151,14 @@ body{
         position: relative;
         opacity: 0.85;
     }
+
+    .formulario{
+      padding: 20px;
+      width: 300px;
+      margin: auto;
+      margin-top: 60px;
+    }
+
   }
   
   @media (min-width: 480px){
